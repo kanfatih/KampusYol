@@ -17,7 +17,7 @@ export default function MainLayout() {
             </header>
           <main className=" flex  flex-1 h-full  ">
              <main className="h-full ">
-                 <Sidebar showSidebar={showSidebar}  />
+                 <Sidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar}  />
              </main>
               <main className="flex-1 overflow-auto pt-25 lg:pt-0  p-4 bg-gray-100 w-full lg:w-auto">
                   <Outlet />

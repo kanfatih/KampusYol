@@ -1,6 +1,11 @@
 import {createBrowserRouter} from "react-router-dom";
 import Home from "/src/pages/home/index.jsx"
 import MainLayout from "../layouts/index.jsx"
+import Panel from "../pages/panel/index.jsx";
+import Campus from "../pages/campus/index.jsx";
+import Academy from "../pages/academy/index.jsx";
+import Settings from "../pages/settings/index.jsx";
+import Profile from "../pages/profile/index.jsx";
 
 const routes = createBrowserRouter( [
     {
@@ -14,24 +19,24 @@ const routes = createBrowserRouter( [
             },
             {
                 path: "/panel",
-                element:"panel-girisi"
+                element:<Panel/>
             },
             {
                 path: "/kampus",
-                element: "kampüs"
+                element: <Campus/>
             },
             {
                 path: "/akademikTakvim",
-                element: "Akademik takvim",
+                element: <Academy/>
             },
 
             {
                 path: "/ayarlar",
-                element: "Ayarlar",
+                element: <Settings/>
             },
             {
                 path: "/profil",
-                element: "profil sayfası",
+                element: <Profile/>
             }
         ]
     }
