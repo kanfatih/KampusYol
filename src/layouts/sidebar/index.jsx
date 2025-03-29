@@ -3,7 +3,7 @@ import LayoutButtons from "./buttons/index.jsx";
 import LayoutInput from "./input/index.jsx";
 ;
 
-export default function Sidebar({showSidebar}) {
+export default function Sidebar({showSidebar,setShowSidebar}) {
 
     return (
         <div className="h-screen ">
@@ -17,7 +17,7 @@ export default function Sidebar({showSidebar}) {
                 `}>
                 <Logo  showSidebar={showSidebar}  />
                 <LayoutInput />
-                <LayoutButtons />
+                <LayoutButtons setShowSidebar={setShowSidebar} showSidebar={showSidebar} />
             </div>
         </div>
     )
