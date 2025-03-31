@@ -15,7 +15,7 @@ export default  function LayoutButtons({setShowSidebar, showSidebar}) {
                            onClick={
                            ()=> {
                                navigate(`${menu.path}`);
-                               setShowSidebar(!showSidebar);
+                               setShowSidebar(! showSidebar);
                            }
                        }
 
