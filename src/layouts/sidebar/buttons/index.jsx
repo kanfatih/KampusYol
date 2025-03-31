@@ -3,6 +3,12 @@ import {sidebarButtons} from "../../../utils/consts.jsx";
 import {useNavigate} from "react-router-dom";
 export default  function LayoutButtons({setShowSidebar, showSidebar}) {
     const navigate = useNavigate();
+    const toggleSidebar = () => {
+        if (window.innerWidth < 1024) {
+            setShowSidebar(!showSidebar);
+        }
+    };
+
     return (
         <div className="  pl-4 max-w-[90%]  w-full  ">
 
@@ -15,7 +21,7 @@ export default  function LayoutButtons({setShowSidebar, showSidebar}) {
                            onClick={
                            ()=> {
                                navigate(`${menu.path}`);
-                               setShowSidebar(!showSidebar);
+                               {toggleSidebar()}
                            }
                        }
 
