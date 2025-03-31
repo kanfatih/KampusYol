@@ -1,6 +1,10 @@
+import KampusNavigasyon from "../../components/navigation-map/index.jsx";
+
 export  default function Home() {
     return (
-       <div className="text-red-600">anasayfa</div>
+       <div >
+           <KampusNavigasyon/>
+       </div>
 
     )
 }
